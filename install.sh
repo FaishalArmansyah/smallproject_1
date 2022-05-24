@@ -24,4 +24,4 @@ sudo mysql -u root -e "grant all privileges on wordpress.* to wpuser@localhost i
 sudo mysql -u root -e "flush privileges;"
 echo "===== Step 6 - Finishing ====="
 sudo systemctl restart apache2
-done
+echo "===== Completed ====="
