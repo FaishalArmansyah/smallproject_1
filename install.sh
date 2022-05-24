@@ -12,7 +12,7 @@ sudo apt install php7.4 libapache2-mod-php7.4 php7.4-mysql php-common php7.4-cli
 sudo a2enmod php7.4
 sudo systemctl restart apache2
 echo "===== Step 4 - Download Wordpress ====="
-git clone https://github.com/FaishalArmansyah/smallproject_1.git
+#git clone https://github.com/FaishalArmansyah/smallproject_1.git
 sudo cp -r smallproject_1/wordpress /var/www/
 sudo chown www-data:www-data /var/www/wordpress/ -R
 sudo cp smallproject_1/wordpress/wordpress.conf /etc/apache2/sites-available/
