@@ -19,8 +19,8 @@ sudo cp smallproject_1/wordpress/wordpress.conf /etc/apache2/sites-available/
 sudo cp smallproject_1/wordpress/servername.conf /etc/apache2/conf-available/
 sudo a2enconf servername.conf && sudo a2ensite wordpress.conf && sudo a2dissite 000-default.conf
 echo "===== Step 5 - Create DB & UserDB ====="
-sudo mysql -uroot -e "create database wordpress_1;"
-sudo mysql -uroot -e "grant all privileges on wordpress_1.* to wpuser_1@localhost identified by '12345678';"
-sudo mysql -uroot -e "flush privileges;"
+sudo mysql -u root -e "create database wordpress;"
+sudo mysql -u root -e "grant all privileges on wordpress.* to wpuser@localhost identified by '12345678';"
+sudo mysql -u root -e "flush privileges;"
 echo "===== Step 6 - Finishing ====="
 sudo systemctl restart apache2
