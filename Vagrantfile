@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.define "reverseproxy-svr" do |web1|
+  config.vm.define "reverseproxy_new-svr" do |web1|
     web1.vm.box = "ubuntu/focal64"
     #for landing-page
     web1.vm.network "forwarded_port", guest: 8080, host: 8080, host_ip: "192.168.100.51"
