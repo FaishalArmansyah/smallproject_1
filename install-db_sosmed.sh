@@ -8,4 +8,4 @@ sudo mysql -u root -e "grant all privileges on wordpress.* to devopscilsy@localh
 sudo mysql -u root -e "flush privileges;"
 echo "===== 3. Restore DB ====="
 mysql -u root dbsosmed < smallproject_1/sosial-media/dump.sql
-echo "===== Completed ====="
+echo "===== Completed =====" 
