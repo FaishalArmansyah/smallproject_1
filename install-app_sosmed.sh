@@ -11,7 +11,7 @@ sudo systemctl restart apache2
 echo "===== Step 3 - Download App ====="
 #git clone https://github.com/FaishalArmansyah/smallproject_1.git
 sudo cp -r smallproject_1/sosial-media /var/www/
-sudo chown www-data:www-data /var/www/sosial-media/ -R
+#sudo chown www-data:www-data /var/www/sosial-media/ -R
 sudo cp smallproject_1/sosial-media/sosmed.conf /etc/apache2/sites-available/
 sudo cp smallproject_1/sosial-media/servername.conf /etc/apache2/conf-available/
 sudo a2enconf servername.conf && sudo a2ensite sosmed.conf && sudo a2dissite 000-default.conf
