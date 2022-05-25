@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "== git clone =="
-git clone https://github.com/FaishalArmansyah/smallproject_1.git
 echo "===== 1. Installasi MySQL ====="
 sudo apt update
 sudo apt install mariadb-server mariadb-client -y
