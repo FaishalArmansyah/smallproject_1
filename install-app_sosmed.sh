@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "== git clone =="
+git clone https://github.com/FaishalArmansyah/smallproject_1.git
 echo "===== Installasi Apache & PHP ====="
 echo "===== Step 1 - Install Apache ====="
 sudo apt update
